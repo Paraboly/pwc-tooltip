@@ -1,0 +1,229 @@
+.icon-style {
+  width: 20px;
+  height: 20px;
+}
+
+.tooltip {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip h3 {
+  margin: 12px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         Tooltip Left Alignment CSS                         */
+/* -------------------------------------------------------------------------- */
+
+.tooltip .left {
+  top: 50%;
+  right: 100%;
+  padding: 2px;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+  min-width: 125px;
+  min-height: 50px;
+  z-index: 99999999;
+  margin-right: 20px;
+  border-radius: 8px;
+  position: absolute;
+  font-weight: normal;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: black;
+  transform: translate(0, -50%);
+  -webkit-box-sizing: border-box;
+  -webkit-transform: translate(0, -50%);
+}
+
+.tooltip:hover .left {
+  display: block;
+}
+
+.tooltip .left i {
+  top: 50%;
+  left: 100%;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+  margin-top: -12px;
+  position: absolute;
+}
+
+.tooltip .left i::after {
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: #000;
+  border: 1px solid #000;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          Tooltip Top Alignment CSS                         */
+/* -------------------------------------------------------------------------- */
+
+.tooltip:hover .top {
+  display: block;
+}
+
+.tooltip .top {
+  left: 50%;
+  top: -20px;
+  padding: 2px;
+  color: #fff;
+  display: none;
+  font-size: 13px;
+  min-width: 125px;
+  min-height: 50px;
+  z-index: 99999999;
+  position: absolute;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: normal;
+  box-sizing: border-box;
+  background-color: black;
+  transform: translate(0, -50%);
+  -webkit-box-sizing: border-box;
+  transform: translate(-30%, -100%);
+  -webkit-transform: translate(-30%, -100%);
+}
+
+.tooltip .top i {
+  top: 100%;
+  left: 30%;
+  width: 30px;
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  margin-left: -15px;
+}
+
+.tooltip .top i::after {
+  left: 50%;
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #000;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         Tooltip Right Alignment CSS                        */
+/* -------------------------------------------------------------------------- */
+
+.tooltip .right {
+  top: 50%;
+  left: 100%;
+  opacity: 0;
+  padding: 2px;
+  color: #fff;
+  font-size: 13px;
+  min-width: 125px;
+  min-height: 50px;
+  margin-left: 20px;
+  z-index: 99999999;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: normal;
+  box-sizing: border-box;
+  background-color: black;
+  transition: opacity 0.8s;
+  transform: translate(0, -50%);
+  -webkit-box-sizing: border-box;
+}
+
+.tooltip:hover .right {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip .right img {
+  width: 400px;
+  border-radius: 8px 8px 0 0;
+}
+
+.tooltip .right i {
+  top: 50%;
+  right: 100%;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+  margin-top: -12px;
+  position: absolute;
+}
+.tooltip .right i::after {
+  left: 0;
+  top: 50%;
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: black;
+  transform: translate(50%, -50%) rotate(-45deg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                        Tooltip Bottom Alignment CSS                        */
+/* -------------------------------------------------------------------------- */
+
+.tooltip .bottom {
+  top: 40px;
+  left: 50%;
+  opacity: 0;
+  padding: 3px;
+  color: #fff;
+  font-size: 13px;
+  min-width: 125px;
+  min-height: 50px;
+  z-index: 99999999;
+  visibility: hidden;
+  position: absolute;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: normal;
+  box-sizing: border-box;
+  background-color: black;
+  transition: opacity 0.8s;
+  transform: translate(-50%, 0);
+  -webkit-box-sizing: border-box;
+}
+
+.tooltip .shadow {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+
+.tooltip:hover .bottom {
+  opacity: 1;
+  display: block;
+  visibility: visible;
+}
+
+.tooltip .bottom i {
+  left: 50%;
+  width: 24px;
+  height: 12px;
+  bottom: 100%;
+  overflow: hidden;
+  position: absolute;
+  margin-left: -12px;
+}
+
+.tooltip .bottom i::after {
+  left: 50%;
+  content: "";
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  background-color: black;
+  transform: translate(-50%, 50%) rotate(45deg);
+}

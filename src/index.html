@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/pwc-tooltip.esm.js"></script>
+    <script nomodule src="/build/pwc-tooltip.js"></script>
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
+    body {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      font-size: 13px;
+      background-color: #fff;
+      font-family: Oswald, opensans, Helvetica Neue, Helvetica, Arial,
+        sans-serif;
+    }
+
+    pwc-tooltip {
+      margin: auto;
+    }
+  </style>
+  <body>
+    <pwc-tooltip tooltip-text="Legend" tooltip-alignment="bottom">
+    </pwc-tooltip>
+
+    <pwc-tooltip
+      tooltip-text="Legend"
+      tooltip-alignment="right"
+      background-color="transparent"
+    >
+      <div
+        style="background-color: black;
+              font-size: 13px;
+              border-radius: 8px;
+              margin-left: -2px;"
+      >
+        <img
+          style="width:400px; height:106px; border-radius:8px 8px 0 0;"
+          src="https://images.unsplash.com/photo-1516093491926-a4c43060540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2709&q=80"
+        />
+        <div style="padding:10px 20px; color:#eee;">
+          <h3
+            style="margin:12px 0; font-size: 22px; text-align: left;
+          font-weight: 400; line-height: 1.2;"
+          >
+            Fade in Effect
+          </h3>
+          <ul
+            style="padding-left: 20px; margin-top: 0; margin-bottom: 1rem; display: block; text-align:left;"
+          >
+            <li>This demo has fade in/out effect.</li>
+            <li>
+              It is using CSS opacity, visibility, and transition property to
+              toggle the tooltip.
+            </li>
+            <li>
+              Other demos are using display property<em>(none or block)</em> for
+              the toggle.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </pwc-tooltip>
+  </body>
+</html>
