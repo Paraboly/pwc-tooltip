@@ -7,9 +7,9 @@
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
     />
     <title>Stencil Component Starter</title>
-
     <script type="module" src="/build/pwc-tooltip.esm.js"></script>
     <script nomodule src="/build/pwc-tooltip.js"></script>
+    <link rel="stylesheet" type="text/css" href="myStyle.css" />
   </head>
   <style>
     @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
@@ -26,44 +26,75 @@
     pwc-tooltip {
       margin: auto;
     }
+
+    .container {
+      font-size: 13px;
+      margin-left: -2px;
+      border-radius: 8px;
+      background-color: black;
+    }
+
+    .img-container {
+      width: 400px;
+      height: 106px;
+      border-radius: 8px 8px 0 0;
+    }
+
+    .content-style {
+      color: #eee;
+      padding: 10px 20px;
+    }
+
+    .h3-style {
+      margin: 12px 0;
+      font-size: 22px;
+      text-align: left;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .ul-style {
+      margin-top: 0;
+      display: block;
+      text-align: left;
+      padding-left: 20px;
+      margin-bottom: 1rem;
+    }
   </style>
   <body>
-    <pwc-tooltip tooltip-text="Legend" tooltip-alignment="bottom">
-    </pwc-tooltip>
-
     <pwc-tooltip
       tooltip-text="Legend"
+      tooltip-alignment="bottom"
+      tooltip-source="../../assets/blog.svg"
+      source-width="100"
+      source-height="100"
+    >
+    </pwc-tooltip>
+    <pwc-tooltip
+      tooltip-text="Call my mom"
       tooltip-alignment="right"
       background-color="transparent"
     >
-      <div
-        style="background-color: black;
-              font-size: 13px;
-              border-radius: 8px;
-              margin-left: -2px;"
-      >
+      <div class="container">
         <img
-          style="width:400px; height:106px; border-radius:8px 8px 0 0;"
+          class="img-container"
           src="https://images.unsplash.com/photo-1516093491926-a4c43060540a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2709&q=80"
         />
-        <div style="padding:10px 20px; color:#eee;">
-          <h3
-            style="margin:12px 0; font-size: 22px; text-align: left;
-          font-weight: 400; line-height: 1.2;"
-          >
-            Fade in Effect
+        <div class="content-style">
+          <h3 class="h3-style">
+            Awesome Title
           </h3>
-          <ul
-            style="padding-left: 20px; margin-top: 0; margin-bottom: 1rem; display: block; text-align:left;"
-          >
-            <li>This demo has fade in/out effect.</li>
+          <ul class="ul-style">
             <li>
-              It is using CSS opacity, visibility, and transition property to
-              toggle the tooltip.
+              It is a long established fact that a reader will be distracted by
+              the readable
             </li>
             <li>
-              Other demos are using display property<em>(none or block)</em> for
-              the toggle.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </li>
+            <li>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
             </li>
           </ul>
         </div>

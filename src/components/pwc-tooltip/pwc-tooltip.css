@@ -177,12 +177,12 @@
 /* -------------------------------------------------------------------------- */
 
 .tooltip .bottom {
-  top: 40px;
   left: 50%;
   opacity: 0;
   padding: 3px;
   color: #fff;
   font-size: 13px;
+  margin-top: 15px;
   min-width: 125px;
   min-height: 50px;
   z-index: 99999999;

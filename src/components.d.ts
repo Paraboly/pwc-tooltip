@@ -11,8 +11,10 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface PwcTooltip {
     'backgroundColor': string;
-    'pointerColor': string;
+    'sourceHeight': number;
+    'sourceWidth': number;
     'tooltipAlignment': string;
+    'tooltipSource': string;
     /**
     * The tooltip text
     */
@@ -36,8 +38,10 @@ declare global {
 declare namespace LocalJSX {
   interface PwcTooltip {
     'backgroundColor'?: string;
-    'pointerColor'?: string;
+    'sourceHeight'?: number;
+    'sourceWidth'?: number;
     'tooltipAlignment'?: string;
+    'tooltipSource'?: string;
     /**
     * The tooltip text
     */

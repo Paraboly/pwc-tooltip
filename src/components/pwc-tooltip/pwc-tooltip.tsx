@@ -15,19 +15,28 @@ export class PWCTooltip {
 
   @Prop() backgroundColor: string = "#000";
 
-  @Prop() pointerColor: string = "#000";
+  @Prop() tooltipSource: string = "../../assets/information.svg";
+
+  @Prop() sourceWidth: number;
+  @Prop() sourceHeight: number;
 
   render() {
     const tooltipAlignmentCustomCSS: any = {
       "background-color": `${this.backgroundColor}`
     };
 
+    const iconStyleCustomCSS: any = {
+      width: `${this.sourceWidth}px`,
+      height: `${this.sourceHeight}px`
+    };
+
     return (
       <div class="tooltip">
         <img
           alt="icon"
-          class="icon-style "
-          src="../../assets/information.svg"
+          class="icon-style"
+          style={iconStyleCustomCSS}
+          src={`${this.tooltipSource}`}
         />
         <div
           class={`${this.tooltipAlignment}`}
