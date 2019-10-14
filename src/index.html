@@ -15,8 +15,9 @@
     @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
     body {
       width: 100vw;
-      height: 100vh;
-      display: grid;
+      height: 85vh;
+      display: flex;
+      flex-direction: column;
       font-size: 13px;
       background-color: #fff;
       font-family: Oswald, opensans, Helvetica Neue, Helvetica, Arial,
@@ -36,7 +37,7 @@
 
     .img-container {
       width: 400px;
-      height: 106px;
+      height: 80px;
       border-radius: 8px 8px 0 0;
     }
 
@@ -63,11 +64,16 @@
   </style>
   <body>
     <pwc-tooltip
-      tooltip-text="Legend"
       tooltip-alignment="bottom"
-      tooltip-source="../../assets/blog.svg"
+      tooltip-text="Basic Tooltip"
+    ></pwc-tooltip>
+
+    <pwc-tooltip
       source-width="100"
       source-height="100"
+      tooltip-text="Custom Image Source"
+      tooltip-alignment="bottom"
+      tooltip-source="../../assets/blog.svg"
     >
     </pwc-tooltip>
     <pwc-tooltip
