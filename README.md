@@ -17,8 +17,8 @@
 <p align="center">
   <img alt="WebComponent PWC Tooltip" src="assets/basic-left.png" width="49%" height="150" />
   <img alt="WebComponent PWC Tooltip" src="assets/basic-right.png" width="49%" height="150" />
-  <img alt="WebComponent PWC Tooltip" src="assets/basic-top.png" width="49%" height="300" />
-  <img alt="WebComponent PWC Tooltip" src="assets/basic-bottom.png" width="49%" height="300" />
+  <img alt="WebComponent PWC Tooltip" src="assets/basic-top.png" width="35%" height="200" />
+  <img alt="WebComponent PWC Tooltip" src="assets/basic-bottom.png" width="35%" height="255" />
 </p>
 
 ## Custom Image Screenshot
