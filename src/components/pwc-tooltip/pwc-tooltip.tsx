@@ -7,17 +7,33 @@ import { Component, Prop, h } from "@stencil/core";
 })
 export class PWCTooltip {
   /**
-   * The tooltip text
+   * Tooltip content text
    */
   @Prop() tooltipText: string = "Tooltip";
 
+  /**
+   * Tooltip alignment prop to where the tooltip will appear
+   */
   @Prop() tooltipAlignment: string = "top";
 
+  /**
+   * Tooltip background color
+   */
   @Prop() backgroundColor: string = "#000";
 
+  /**
+   * Tooltip shown source
+   */
   @Prop() tooltipSource: string = "../../assets/information.svg";
 
+  /**
+   * Tooltip source's width
+   */
   @Prop() sourceWidth: number;
+
+  /**
+   * Tooltip source's height
+   */
   @Prop() sourceHeight: number;
 
   render() {
