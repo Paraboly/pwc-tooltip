@@ -12,7 +12,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
-# [Live CodePen Example](https://codepen.io/wrathchaos/pen/jOOBKqr)
+# [Live Codepen Example](https://codepen.io/wrathchaos/pen/jOOBKqr)
 
 </br>
 
