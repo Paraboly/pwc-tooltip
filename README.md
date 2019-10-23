@@ -12,6 +12,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
+# (Live CodePen Example)[https://codepen.io/wrathchaos/pen/jOOBKqr]
+
 ## Basic Tooltip Screenshots 
 
 <p align="center">
@@ -39,7 +41,6 @@
 
 ### Script tag
 
-- [Publish to NPM](https://docs.npmjs.com/getting-started/publishing-npm-packages)
 - Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-tooltip@0.0.1/dist/pwc-tooltip/pwc-tooltip.esm.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
