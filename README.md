@@ -14,6 +14,8 @@
 
 # [Live CodePen Example](https://codepen.io/wrathchaos/pen/jOOBKqr)
 
+</br>
+
 ## Basic Tooltip Screenshots 
 
 <p align="center">
