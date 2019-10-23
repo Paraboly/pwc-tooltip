@@ -12,9 +12,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 
 
-# [Live Codepen Example](https://codepen.io/wrathchaos/pen/jOOBKqr)
-
-</br>
 
 ## Basic Tooltip Screenshots 
 
@@ -38,6 +35,10 @@
   <img alt="WebComponent PWC Tooltip" src="assets/custom-slot.png" width="65%" height="65%" />
 </p>
 
+
+## [Live Codepen Example](https://codepen.io/wrathchaos/pen/jOOBKqr)
+
+</br>
 
 ## Installation
 
