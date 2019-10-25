@@ -44,7 +44,7 @@
 
 ### Script tag
 
-- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-tooltip@0.0.1/dist/pwc-tooltip/pwc-tooltip.esm.js"></script>` in the head of your index.html
+- Put a script tag similar to this `<script	type="module" src="https://unpkg.com/@paraboly/pwc-tooltip@latest/dist/pwc-tooltip/pwc-tooltip.esm.js"></script>` in the head of your index.html
 - Then you can use the element anywhere in your template, JSX, html etc
 
 ### Node Modules
