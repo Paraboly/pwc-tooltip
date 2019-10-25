@@ -1,6 +1,6 @@
 {
   "name": "@paraboly/pwc-tooltip",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Fully customizable tooltip web component with StencilJS via Paraboly",
   "main": "dist/index.js",
   "module": "dist/index.mjs",

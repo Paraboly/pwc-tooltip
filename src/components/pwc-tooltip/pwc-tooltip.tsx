@@ -24,7 +24,8 @@ export class PWCTooltip {
   /**
    * Tooltip shown source
    */
-  @Prop() tooltipSource: string = "../../assets/information.svg";
+  @Prop() tooltipSource: string =
+    "https://image.flaticon.com/icons/svg/157/157933.svg";
 
   /**
    * Tooltip source's width
